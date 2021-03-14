@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pepko's Journey</title>
+    <link id="favicon" rel="shortcut icon" type="image/png" href="sprites/addings/gachiGASM.png" />
+
+    <style>
+        @font-face {
+            font-family: "ThaleahFat.ttf";
+            src: url("fonts/ThaleahFat.ttf");
+        }
+    </style>
+
+    <script src="assets/jquery.js"></script>
+    <script src="assets/howler.js"></script>
+
+    <div id="images" style="display: none">
+        <img id="tiles1" src="sprites/tiles/grass/tiles1.png">
+        <img id="coin" src="sprites/addings/coin.png">
+        <img id="flag" src="sprites/addings/flag.png">
+        <img id="potion" src="sprites/addings/potion.png">
+        <img id="pepeD" src="sprites/addings/pepeD.png">
+        <img id="playButton" src="sprites/addings/playButton.png">
+        <img id="pauseButton" src="sprites/addings/pauseButton.png">
+        <img id="soundPlaying" src="sprites/addings/soundPlaying.png">
+        <img id="soundMuted" src="sprites/addings/soundMuted.png">
+        <img id="gamePaused" src="sprites/addings/gamePaused.png">
+        <img id="restartGameB" src="sprites/addings/restartGameB.png">
+        <img id="restartGameW" src="sprites/addings/restartGameW.png">
+        <img id="restartLevelB" src="sprites/addings/restartLevelB.png">
+        <img id="restartLevelW" src="sprites/addings/restartLevelW.png">
+
+        <img id="pIdle" src="sprites/player/ninja/pIdle.png">
+        <img id="pIdleF" src="sprites/player/ninja/pIdleF.png">
+        <img id="pRun" src="sprites/player/ninja/pRun.png">
+        <img id="pRunF" src="sprites/player/ninja/pRunF.png">
+        <img id="pJump" src="sprites/player/ninja/pJump.png">
+        <img id="pJumpF" src="sprites/player/ninja/pJumpF.png">
+        <img id="pClimb" src="sprites/player/ninja/pClimb.png">
+        <img id="pClimbF" src="sprites/player/ninja/pClimb.png">
+
+        <img id="slimeO" src="sprites/mobs/slimeO.png">
+        <img id="slimeOF" src="sprites/mobs/slimeOF.png">
+        <img id="batR" src="sprites/mobs/batR.png">
+        <img id="batRF" src="sprites/mobs/batRF.png">
+        <img id="alienG" src="sprites/mobs/alienG.png">
+        <img id="alienGF" src="sprites/mobs/alienGF.png">
+        <img id="slimeP" src="sprites/mobs/slimeP.png">
+        <img id="slimePF" src="sprites/mobs/slimePF.png">
+        <img id="batV" src="sprites/mobs/batV.png">
+        <img id="batVF" src="sprites/mobs/batVF.png">
+        <img id="alienB" src="sprites/mobs/alienB.png">
+        <img id="alienBF" src="sprites/mobs/alienBF.png">
+    </div>
+
+    <div id="sounds" style="display: none">
+        <link title="GTMLevel1" href="sounds/GTMLevel1.mp3">
+        <link title="GTMLevel2" href="sounds/GTMLevel2.mp3">
+
+        <link title="pCoin" href="sounds/pCoin.mp3">
+        <link title="pJump" href="sounds/pJump.mp3">
+        <link title="pHit" href="sounds/pHit.mp3">
+        <link title="pMobHit" href="sounds/pMobHit.mp3">
+        <link title="pDeath" href="sounds/pDeath.mp3">
+        <link title="pHeal" href="sounds/pHeal.mp3">
+    </div>
+
+    <div id="levels">
+        <script src="assets/level1.js"></script>
+        <script src="assets/level2.js"></script>
+
+        <script src="assets/hudIcons.js"></script>
+    </div>
+
+</head>
+
+<body bgcolor="#3a403c">
+
+    <div id="stage">
+        <canvas id="gameC"></canvas>
+
+        <canvas id="background"></canvas>
+        <canvas id="bBlocks"></canvas>
+        <canvas id="fBlocks"></canvas>
+        <canvas id="hud"></canvas>
+    </div>
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        canvas {
+            position: absolute;
+            outline: black 3px solid;
+        }
+
+        #stage {
+            margin: auto;
+
+            width: 1280px;
+            height: 720px;
+        }
+    </style>
+
+    <script src="scripts/BlockManager.js"></script>
+    <script src="scripts/SoundManager.js"></script>
+    <script src="scripts/GameRenderer.js"></script>
+    <script src="scripts/EventListener.js"></script>
+    <script src="scripts/Player.js"></script>
+    <script src="scripts/Mobs.js"></script>
+    <script src="scripts/HUD.js"></script>
+    <script src="scripts/Camera.js"></script>
+    <script src="scripts/GameManager.js"></script>
+</body>
+
+</html>

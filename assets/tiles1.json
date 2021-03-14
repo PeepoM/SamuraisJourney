@@ -1,0 +1,14 @@
+{ "columns":18,
+ "image":"..\/sprites\/tiles\/grass\/tiles1.png",
+ "imageheight":256,
+ "imagewidth":288,
+ "margin":0,
+ "name":"tiles",
+ "spacing":0,
+ "tilecount":288,
+ "tiledversion":"1.2.4",
+ "tileheight":16,
+ "tilewidth":16,
+ "type":"tileset",
+ "version":1.2
+}
